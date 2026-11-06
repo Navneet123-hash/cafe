@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mevi Smart Cafe</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>MEVI SMART CAFE</h1>
+        <p class="tagline">Fresh flavours. Friendly prices.</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#billing">Billing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Mevi Smart Cafe</h2>
+        <!-- Web / Internet Image URL for Cafe Banner -->
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Mevi Smart Cafe Banner" class="banner-img">
+        <p>Your happy place for quick bites, refreshing drinks, and delicious desserts. We prepare tasty food with the freshest ingredients and serve every customer with a smile!</p>
+        <p>Enjoy your meal. Learn web development. Build something amazing!</p>
+        <button type="button" id="exploreBtn">Explore Our Menu</button>
+    </section>
+
+    <hr>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Our Cafe</h2>
+        <h3>Who we are</h3>
+        <p>Mevi Smart Cafe is a fictional cafe created for an HTML and CSS practice project. It is a place where great food and creative drinks come together. Whether you need a quick snack or a refreshing drink, we have something for you.</p>
+
+        <h3>Why customers love us:</h3>
+        <ul>
+            <li>Freshly prepared food</li>
+            <li>Affordable student-friendly prices</li>
+            <li>Clean and welcoming atmosphere</li>
+            <li>Quick takeaway service</li>
+            <li>Delicious vegetarian options</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Special Offers Section -->
+    <section id="offers">
+        <h2>Special Offers</h2>
+        <h3>Today's Special Combos</h3>
+        <ul>
+            <li><strong>Combo 1:</strong> Veg Burger + Cold Coffee — ₹190</li>
+            <li><strong>Combo 2:</strong> Cheese Sandwich + Orange Juice — ₹170</li>
+            <li><strong>Combo 3:</strong> Veg Pizza + Chocolate Cupcake — ₹250</li>
+        </ul>
+        <p><em><strong>Note:</strong> Combo prices are sample educational values. Offers cannot be combined with other discounts.</em></p>
+    </section>
+
+    <hr>
+
+    <!-- Menu Gallery Section -->
+    <section id="menu">
+        <h2>Our Menu Gallery</h2>
+        
+        <div class="gallery-container">
+            <!-- Card 1 -->
+            <div class="menu-item-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80" alt="Veg Burger">
+                </div>
+                <div class="item-title">Veg Burger</div>
+                <div class="item-price">₹ 120</div>
+                <div class="item-description">A crispy vegetable patty in a soft bun with lettuce and house sauce.</div>
+                <button type="button" class="add-to-cart-btn" data-name="Veg Burger" data-price="120">Add to Order</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="menu-item-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=300&q=80" alt="Veg Pizza">
+                </div>
+                <div class="item-title">Veg Pizza</div>
+                <div class="item-price">₹ 180</div>
+                <div class="item-description">A personal pizza topped with cheese, capsicum and tomato.</div>
+                <button type="button" class="add-to-cart-btn" data-name="Veg Pizza" data-price="180">Add to Order</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="menu-item-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80" alt="Cheese Sandwich">
+                </div>
+                <div class="item-title">Cheese Sandwich</div>
+                <div class="item-price">₹ 100</div>
+                <div class="item-description">Toasted bread filled with melted cheese and fresh vegetables.</div>
+                <button type="button" class="add-to-cart-btn" data-name="Cheese Sandwich" data-price="100">Add to Order</button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="menu-item-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=80" alt="Cold Coffee">
+                </div>
+                <div class="item-title">Cold Coffee</div>
+                <div class="item-price">₹ 90</div>
+                <div class="item-description">A refreshing chilled coffee with a creamy finish.</div>
+                <button type="button" class="add-to-cart-btn" data-name="Cold Coffee" data-price="90">Add to Order</button>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="menu-item-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1613478223719-2ab802602423?auto=format&fit=crop&w=300&q=80" alt="Orange Juice">
+                </div>
+                <div class="item-title">Orange Juice</div>
+                <div class="item-price">₹ 80</div>
+                <div class="item-description">A fresh, citrusy drink that pairs with any snack.</div>
+                <button type="button" class="add-to-cart-btn" data-name="Orange Juice" data-price="80">Add to Order</button>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="menu-item-card">
+                <div class="image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=300&q=80" alt="Chocolate Cupcake">
+                </div>
+                <div class="item-title">Chocolate Cupcake</div>
+                <div class="item-price">₹ 70</div>
+                <div class="item-description">A soft chocolate cupcake topped with rich chocolate frosting.</div>
+                <button type="button" class="add-to-cart-btn" data-name="Chocolate Cupcake" data-price="70">Add to Order</button>
+            </div>
+        </div>
+
+        <!-- Full Menu Price List Table -->
+        <h3>Full Menu Price List</h3>
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Item Name</th>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+            <tr><td>F01</td><td>Veg Burger</td><td>Snack</td><td>₹120</td></tr>
+            <tr><td>F02</td><td>Cheese Sandwich</td><td>Snack</td><td>₹100</td></tr>
+            <tr><td>F03</td><td>Veg Pizza</td><td>Snack</td><td>₹180</td></tr>
+            <tr><td>D01</td><td>Cold Coffee</td><td>Drink</td><td>₹90</td></tr>
+            <tr><td>D02</td><td>Orange Juice</td><td>Drink</td><td>₹80</td></tr>
+            <tr><td>S01</td><td>Chocolate Cupcake</td><td>Dessert</td><td>₹70</td></tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Billing Section -->
+    <section id="billing">
+        <h2>Live Customer Bill Calculator</h2>
+        <div class="invoice-box">
+            <h4>MEVI SMART CAFE — CUSTOMER INVOICE</h4>
+            <p><strong>Invoice Number:</strong> MSC-1001</p>
+            <p><strong>Customer Name:</strong> <span id="billCustomerName">Ananya Rao</span></p>
+            <p><strong>Order Type:</strong> <span id="billOrderType">Takeaway</span></p>
+            <p><strong>Order Date:</strong> 04 November 2026</p>
+        </div>
+
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Unit Price</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="cartTableBody">
+                <tr>
+                    <td>Veg Burger</td>
+                    <td>2</td>
+                    <td>₹120</td>
+                    <td>₹240</td>
+                </tr>
+                <tr>
+                    <td>Cheese Sandwich</td>
+                    <td>1</td>
+                    <td>₹100</td>
+                    <td>₹100</td>
+                </tr>
+                <tr>
+                    <td>Cold Coffee</td>
+                    <td>2</td>
+                    <td>₹90</td>
+                    <td>₹180</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bill-totals">
+            <p>Subtotal: <strong id="subtotalText">₹520</strong></p>
+            <p>Sample Tax (5%): <strong id="taxText">₹26</strong></p>
+            <p class="grand-total">Grand Total: <strong id="grandTotalText">₹546</strong></p>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Order Form Section -->
+    <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form id="cafeOrderForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="fullName">Customer Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="item">Choose Item:</label>
+                <select id="item" name="item" required>
+                    <option value="">-- Select an Item --</option>
+                    <option value="Veg Burger|120">Veg Burger - ₹120</option>
+                    <option value="Veg Pizza|180">Veg Pizza - ₹180</option>
+                    <option value="Cheese Sandwich|100">Cheese Sandwich - ₹100</option>
+                    <option value="Cold Coffee|90">Cold Coffee - ₹90</option>
+                    <option value="Orange Juice|80">Orange Juice - ₹80</option>
+                    <option value="Chocolate Cupcake|70">Chocolate Cupcake - ₹70</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Order Type:</label>
+                <input type="radio" id="dineIn" name="orderType" value="Dine In" checked>
+                <label for="dineIn" class="inline-label">Dine In</label>
+                
+                <input type="radio" id="takeaway" name="orderType" value="Takeaway">
+                <label for="takeaway" class="inline-label">Takeaway</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="preferredDate">Preferred Date:</label>
+                <input type="date" id="preferredDate" name="preferredDate" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Add Extra Cheese?</label>
+                <input type="radio" id="cheeseYes" name="extraCheese" value="Yes">
+                <label for="cheeseYes" class="inline-label">Yes</label>
+                
+                <input type="radio" id="cheeseNo" name="extraCheese" value="No" checked>
+                <label for="cheeseNo" class="inline-label">No</label>
+            </div>
+            
+            <div class="form-group">
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="4"></textarea>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Place Order</button>
+                <button type="reset" class="btn-secondary">Clear Form</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p><strong>Address:</strong> 123 Learning Street, Bengaluru, Karnataka (fictional practice address)</p>
+        <p><strong>Hours:</strong> Monday to Saturday, 9:00 AM to 8:00 PM</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></p>
+        
+        <p><strong>Follow us:</strong> 
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">YouTube</a>
+        </p>
+        
+        <hr>
+        <p>&copy; 2026 Mevi Smart Cafe. Created for HTML learning at Mevi Technologies.</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
